@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 // import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
@@ -7,7 +8,7 @@ const { authMiddleware } = require('./utils/auth');
 // import our typeDefs and resolvers
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
-const PORT = process.env.PORT || 8086;
+const PORT = process.env.PORT || 3011;
 const app = express();
 // create a new Apollo server and pass in our schema data
 const server = new ApolloServer({
@@ -26,6 +27,17 @@ server.start().then(() => {
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+// Serve up static assets
+// back-end server's code to serve up the React front-end code in production
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+// WILDCARD GET ROUTE
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 db.once('open', () => {
   app.listen(PORT, () => {
