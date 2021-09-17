@@ -1,6 +1,11 @@
+import { useParams } from 'react-router-dom';
 import React from 'react';
 
 const SingleThought = props => {
+
+  const { id: thoughtId } = useParams();
+  console.log(thoughtId);
+
   return (
     <div>
       <div className="card mb-3">
