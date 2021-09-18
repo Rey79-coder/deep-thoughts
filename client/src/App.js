@@ -2,6 +2,8 @@
 import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 // enables the Apollo Client instance to cache API response // to control how the Apollo Client makes a request. 
 
+import { setContext } from '@apollo/client/link/context';
+
 import React from 'react';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -22,10 +24,22 @@ const httpLink = createHttpLink({
   uri: '/graphql',
 });
 
+// THIS WILL CHANGE FROM LOGIN TO LOGOUT
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
 const client = new ApolloClient({
-  link: httpLink,
+  link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
 });
+
 
 
 function App() {
