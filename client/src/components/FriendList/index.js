@@ -17,6 +17,7 @@ const FriendList = ({ friendCount, username, friends }) => {
         </button>
       ))}
     </div>
+    
   );
 };
 
