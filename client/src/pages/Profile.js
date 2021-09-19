@@ -4,6 +4,8 @@ import React from 'react';
 
 import { Redirect, useParams } from 'react-router-dom';
 
+import ThoughtForm from '../components/ThoughtForm';
+
 import ThoughtList from '../components/ThoughtList';
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
@@ -13,6 +15,7 @@ import FriendList from '../components/FriendList';
 import { ADD_FRIEND } from '../utils/mutations';
 
 import { useQuery, useMutation } from '@apollo/client';
+
 
 const Profile = () => {
   const { username: userParam } = useParams();
@@ -77,10 +80,12 @@ const Profile = () => {
             friendCount={user.friendCount}
             friends={user.friends}
           />
+          
         </div>
-
-
       </div>
+
+      <div className="mb-3">{!userParam && <ThoughtForm />}</div>
+
     </div>
   );
 };
