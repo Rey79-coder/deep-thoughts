@@ -21,7 +21,7 @@
 ## Contribution:
     Contact me.
 ## Link:
-    https://github.com/Rey79-coder/deep-thoughts
+    https://still-bayou-32664.herokuapp.com/
 ## Questions:
     How do make money out of this application?
 ## email:
