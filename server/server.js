@@ -18,7 +18,6 @@ const server = new ApolloServer({
 
 });
 
-// await server.listen({ port: 8008 })
 
 // integrate our Apollo server with the Express application as middleware
 server.start().then(() => {
