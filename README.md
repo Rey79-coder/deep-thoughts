@@ -53,7 +53,7 @@
     There is a video showing on how to work the application.
    
   ## Images 
-    (Comming up...)
+    (https://github.com/Rey79-coder/deep-thoughts/blob/main/assets/catijos.png)
     For illustration purposes there is a snapshot of real live instance.
    
    
