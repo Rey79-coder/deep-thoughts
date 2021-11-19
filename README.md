@@ -4,14 +4,14 @@
   
   ## Table of Content
 
-  -[Description](#Description)
-  -[Installation](#Installation)
-  -[Usage](#Usage)
-  -[Licenses](#Licenses)
-  -[Contribution](#Contribution)
-  -[Link](#Link)
-  -[Questions](#Questions)
-  -[email](#email)
+  - [Description](#Description)
+  - [Installation](#Installation)
+  - [Usage](#Usage)
+  - [Licenses](#Licenses)
+  - [Contribution](#Contribution)
+  - [Link](#Link)
+  - [Questions](#Questions)
+  - [email](#email)
   
   ## Description: 
       Social media for cats. It's simple and easy to use, post pictures, memes, videos, jokes, and stories about cats. The functionality runs using GraphQL as API. 
