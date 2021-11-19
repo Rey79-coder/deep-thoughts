@@ -14,7 +14,9 @@
   - [email](#email)
   
   ## Description: 
-      Social media for cats. It's simple and easy to use, post pictures,   memes, videos, jokes, and stories about cats.   The functionality runs using GraphQL as API. 
+      Social media for cats. It's simple and easy to use, post pictures,
+         memes, videos, jokes, and stories about cats.
+         The functionality runs using GraphQL as API. 
 
   ## Installation:
       You need to install GraphQL, Apollo, MongoDB, React Router,  concurrently npm package, JSON Web Tokens, jwt-decode npm package,  faker, nodemon.
