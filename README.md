@@ -19,10 +19,15 @@
          The functionality runs using GraphQL as API. 
 
   ## Installation:
-      You need to install GraphQL, Apollo, MongoDB, React Router,  concurrently npm package, JSON Web Tokens, jwt-decode npm package,  faker, nodemon.
+      You need to install GraphQL, Apollo, MongoDB, React Router, 
+       concurrently npm package, JSON Web Tokens, 
+       jwt-decode npm package,  faker, nodemon.
 
   ## Usage:
-      First, you have to signup. Then make sure you have your credentials handy. In other words, use a piece of paper and write down your password, email, and username.
+      First, you have to signup. 
+      Then make sure you have your credentials handy. 
+      In other words, use a piece of paper and 
+      write down your password, email, and username.
   
   ## Licenses:
      This repository is licensed under the Apache 2.0 license.
@@ -40,7 +45,8 @@
       verareyna79@gmail.com
 
   ## For additional questions:
-    Please reach me out through my email: verareyna79@gmail.com.
+    Please reach me out through my email: 
+    verareyna79@gmail.com.
   
   ## Video 
     (Comming up...)
